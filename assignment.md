@@ -25,6 +25,14 @@ Formulas to compute area:
 ---
 ### Open Questions:
 - What is the difference between `enum classes` and `data classes`?
+-                                    `enum classes`
+- Enum constants aren’t just mere collections of constants- these have properties, methods etc
+  Each of the enum constants acts as separate instances of the class and separated by commas.
+  Enums increases readability of your code by assigning pre-defined names to constants.
+  An instance of enum class cannot be created using constructors.
+-                                     `data classes`
+- The Kotlin language introduces the concept of Data Classes, which represent simple classes used as data containers and do not encapsulate any additional logic.
+- Simply put, Kotlin’s solution enables us to avoid writing a lot of boilerplate code
 - Which one of the `object` keyword ways can be used for the inheritance concept?
-
+"Object Name"
 

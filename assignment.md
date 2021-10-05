@@ -25,6 +25,9 @@ Formulas to compute area:
 ---
 ### Open Questions:
 - What is the difference between `enum classes` and `data classes`?
+*** data classes used to store the data ,and it considered as a data type
+*** Enum class used to store a specific constant set of values to
+avoid typo mistakes for repetitive use of these values
 - Which one of the `object` keyword ways can be used for the inheritance concept?
-
+*** "object" keyword
 

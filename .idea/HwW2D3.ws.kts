@@ -11,7 +11,7 @@ open class Shape(private var shapeName: String, private var shapeColor:String ) 
 
     fun info() {
 
-        println("the name of the shape is $shapeName and it colors $shapeColor ")
+        println(" the name of the shape is $shapeName and it colors $shapeColor ")
     }
 }
 

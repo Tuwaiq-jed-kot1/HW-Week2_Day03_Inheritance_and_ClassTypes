@@ -31,17 +31,17 @@ open class Shape(var shapeName:String, var shapeColor:String){
 fun main() {
   val circle = Circle(3.0)
   println(circle.info())
-  println("Circle area equals to ${circle.computeArea()}")
+  println("Circle area equals to ${circle.computeArea()}\n")
 
 
   val triangle = Triangle(1.2, 4.7)
   println(triangle.info())
-  println("Triangle area equals to ${triangle.computeArea()}")
+  println("Triangle area equals to ${triangle.computeArea()}\n")
 
 
   val rectangle = Rectangle(5.5, 3.1)
   println(rectangle.info())
-  println("Rectangle area equals to ${rectangle.computeArea()}")
+  println("Rectangle area equals to ${rectangle.computeArea()}\n")
 
 }
 

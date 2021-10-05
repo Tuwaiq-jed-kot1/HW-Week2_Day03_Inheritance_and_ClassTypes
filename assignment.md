@@ -80,6 +80,6 @@ C.info()
 - 
 - Which one of the `object` keyword ways can be used for the inheritance concept?
   Companion Object
-- object ClassName :Single Inheritance..
+- object ClassName :Single Inheritance..[]
 - 
 

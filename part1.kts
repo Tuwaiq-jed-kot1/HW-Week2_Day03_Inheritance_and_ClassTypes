@@ -1,91 +1,98 @@
 package Day3.HW3
 
-import Day3.Animal
-import java.awt.Color
 
+open class Shape() {
 
-open class Shape(){
-
-    lateinit var shapeName:String
+    lateinit var shapeName: String
     lateinit var shapeColor: String
 
 
-    open fun info(){
+    init {
+        shapeColor = "black"
+        shapeName = "Shape"
+    }
 
-        println("info1")
+    open fun info() {
+
+        println("$shapeName info ")
         println("shep name : $shapeName   shepe color $shapeColor")
 
     }
 
-    open fun computeArea():Double{
-        println("computeAre2")
-
-        var width:Double=5.0
-        var height:Double=10.0
-
-        var radius :Double=10.0
-        var pi  :Double=10.0
-
-        var base :Double=10.0
+    open fun computeArea(): Double {
+        println("computeAre")
 
 
         return 0.0
 
 
-
     }
 
 }
 
-class Rectangle(_type:String):Shape(){
 
-    override fun info(){
+//-----------------------Class 1----------------------------------
+class Rectangle() : Shape() {
 
-        println("info2")
+    override fun info() {
+
+        shapeName = "Rectangle"
+        shapeColor = "blue"
+
+        println("$shapeName info ")
 
         println("shep name : $shapeName   shepe color $shapeColor")
 
 
     }
 
-    override fun computeArea():Double{
-        println("computeArea2")
-        var height :Double=5.0
-        var width  :Double=10.0
+    override fun computeArea(): Double {
+
+        println("\nRectangle area")
+
+
         //`Rectangle area = height times width  (A = h * w)`
 
-        var A=width*height
+        var width = 5.0
+        var height = 15.0
+        var rectangle = width * height
+        println("$width * $height")
 
-        println(A)
-        return A
+        return rectangle
 
     }
 
 }
 
-class Triangle(_type:String):Shape(){
+
+//-----------------------Class 2----------------------------------
+
+class Triangle() : Shape() {
 
 
-    override fun info(){
+    override fun info() {
 
-        println("info2")
+        shapeName = "Triangle"
+        shapeColor = "red"
 
+        println("$shapeName info ")
         println("shep name : $shapeName   shepe color $shapeColor")
 
 
     }
 
+    override fun computeArea(): Double {
 
-    override fun computeArea():Double{
-        println("computeArea2")
+        println("\nTriangle area ")
 
-        var height:Double=5.0
-        var base :Double=10.0
+        var height: Double = 5.0
+        var base: Double = 10.0
         //`Triangle area = half of height times base (A = (h * b)/2 )`
 
-        var triangle =((height * base)/2)
+        var triangle = ((height * base) / 2)
+        println("($height * $base )/2)")
 
-        println("Triangle area $triangle")
+
         return triangle
 
     }
@@ -93,33 +100,32 @@ class Triangle(_type:String):Shape(){
 }
 
 
+//-----------------------Class 3----------------------------------
 
-class Circle(_type:String):Shape(){
-
-
-    var radius :Double=3.0
+class Circle() : Shape() {
 
 
+    override fun info() {
 
-    override fun info(){
+        shapeName = "Circle"
+        shapeColor = "green"
 
-        println("info2")
+        println("$shapeName info ")
 
-        println("shep name : $shapeName   shepe color $shapeColor")
-
+        println("shep name : $shapeName ,  shepe color $shapeColor")
 
     }
 
 
-    override fun computeArea():Double{
-        println("computeArea2")
+    override fun computeArea(): Double {
+        println("\nCircle area ")
 
         //`Circle area = pi times the radius squared (A = π*r²)`
 
+        var radius: Double = 3.0
 
-        val PI = 3.14
-        var circle=(PI*(radius * radius ))
-        println("Circle area ")
+        var circle = (3.14 * (radius * radius))
+        println("( 3.14 *($radius * $radius))")
         return circle
 
     }
@@ -129,30 +135,30 @@ class Circle(_type:String):Shape(){
 
 fun main() {
 
-    //val animal1 = Animal("dog")
-    val v = Shape()
-    v.shapeName="shep 1"
-    v.shapeColor="red"
+    println("-------------------------------------------\n")
 
-    println(v.shapeColor)
-    v.computeArea()
+    var rectangle = Rectangle()
+    rectangle.info()
 
-
-    println("-------------------------------------------")
-
-    var Rectangle =Rectangle("Rectangle ")
-    Rectangle.computeArea()
-
-    println("-------------------------------------------")
+    println(rectangle.computeArea())
 
 
-    var Triangle =Triangle("Triangle area")
-    println( Triangle.computeArea())
+    println("-------------------------------------------\n")
+
+
+    var triangle = Triangle()
+
+    triangle.info()
+
+    println(triangle.computeArea())
 
     println("-------------------------------------------")
 
 
-    var circle =Circle("Circle area ")
+    var circle = Circle()
+
+
+    circle.info()
 
     println(circle.computeArea())
 }

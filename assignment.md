@@ -25,6 +25,16 @@ Formulas to compute area:
 ---
 ### Open Questions:
 - What is the difference between `enum classes` and `data classes`?
+- >An enum is a special "class" that represents a group of constants (unchangeable variables, like final variables).
+To create an enum, use the enum keyword (instead of class or interface),
+- >A data class is something that holds the data for us. It doesn’t hold any other functionality in it.
+- 
 - Which one of the `object` keyword ways can be used for the inheritance concept?
+- >open 
+-} open class Car // Class is open for inheritance
+
+
+
+
 
 

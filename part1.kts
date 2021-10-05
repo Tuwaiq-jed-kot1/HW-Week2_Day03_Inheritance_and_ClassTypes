@@ -25,11 +25,9 @@ open class Shape() {
 
         return 0.0
 
-
     }
 
 }
-
 
 //-----------------------Class 1----------------------------------
 class Rectangle() : Shape() {

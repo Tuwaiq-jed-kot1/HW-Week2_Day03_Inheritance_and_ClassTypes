@@ -21,6 +21,7 @@ Formulas to compute area:
 `Triangle area = half of height times base (A = (h * b)/2 )`
 ```
 
+
 ## Part II - Practice with Class types.
 ---
 ### Open Questions:

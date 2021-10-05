@@ -32,9 +32,6 @@ class Triangle(shapeName: String, shapeColor: String, private val base: Double, 
     override fun computeArea(): Double = ((height * base) / 2)
 
 }
-object Pentagon : Shape("newShape","Yellow"){
-
-}
 
 class Circle(shapeName: String, shapeColor: String, private val radius: Double) :
     Shape(shapeName, shapeColor) {

@@ -1,0 +1,59 @@
+open class Shape(var shapeName: String, var shapeColor: String){
+    open var _shapeName = shapeName
+    open var _shapeColor = shapeColor
+
+    open fun computeArea() : Double {
+        var _computeArea = 1.0
+        return _computeArea
+    }
+    open fun info(){
+        println("shape name is $_shapeName and its color is $_shapeColor")
+    }
+}
+class Triangle(shapeName: String, shapeColor: String) : Shape(shapeName,shapeColor){
+    override var _shapeName = shapeName
+    override var _shapeColor = shapeColor
+    var base: Double = 5.3
+    var height: Double = 7.4
+    override fun computeArea() : Double {
+        var _computeArea = (height * base)/2
+        println("$_shapeName compute Area $_computeArea")
+        return _computeArea
+    }
+    override fun info(){
+        println("shape name is $_shapeName and its color is $_shapeColor")
+    }
+}class Rectangle(shapeName: String, shapeColor: String) : Shape(shapeName,shapeColor){
+    override var _shapeName = shapeName
+    override var _shapeColor = shapeColor
+    var width: Double = 6.0
+    var height: Double = 5.5
+    override fun computeArea() : Double {
+        var _computeArea = height * width
+        println("$_shapeName compute Area $_computeArea")
+        return _computeArea
+    }
+    override fun info(){
+        println("shape name is $_shapeName and its color is $_shapeColor")
+    }
+}class Circle(shapeName: String, shapeColor: String) : Shape(shapeName,shapeColor){
+    override var _shapeName = shapeName
+    override var _shapeColor = shapeColor
+    var pi: Double = 3.14
+    var radius: Double = 4.5
+    override fun computeArea() : Double {
+        var _computeArea = (radius*radius)*pi
+        println("$_shapeName compute Area $_computeArea")
+        return _computeArea
+    }
+    override fun info(){
+        println("shape name is $_shapeName and its color is $_shapeColor")
+    }
+}
+
+fun main(){
+    val triangle = Triangle("Triangle","Red")
+    triangle.info()
+    triangle.computeArea()
+
+}

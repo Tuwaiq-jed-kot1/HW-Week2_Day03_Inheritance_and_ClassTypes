@@ -26,5 +26,6 @@ Formulas to compute area:
 ### Open Questions:
 - What is the difference between `enum classes` and `data classes`?
 - Which one of the `object` keyword ways can be used for the inheritance concept?
+- companion object
 
 

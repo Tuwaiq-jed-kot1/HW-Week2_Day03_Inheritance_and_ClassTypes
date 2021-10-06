@@ -12,9 +12,9 @@ class Triangle(base:Int, height:Int):Shape("Triangle","Orange"){
 
     override fun computeArea():Double{
         var base= 4
-        var tHieght=6
+        var tHieght=6.1
         var tArea= base*tHieght/2
-        println("Rectangle area = $tArea")
+        println("Triangle area = $tArea")
         return tArea.toDouble()
     }
 }

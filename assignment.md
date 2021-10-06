@@ -25,6 +25,9 @@ Formulas to compute area:
 ---
 ### Open Questions:
 - What is the difference between `enum classes` and `data classes`?
+#### data classes are used to hold data
+#### enum classes holds objects, constant variables
 - Which one of the `object` keyword ways can be used for the inheritance concept?
-
+#### object ObjName{} and companion object both can be accessed from any class
+#### and keyword 'open' can make a class open to be inheritance from
 

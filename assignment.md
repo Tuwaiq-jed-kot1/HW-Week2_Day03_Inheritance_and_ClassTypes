@@ -14,6 +14,9 @@ On the other hand, there are three subclasses that inherit from the superclass c
 
 You need to change the body of `computeArea()` in each subclass to make sure this function will compute the area according to the subclass' name. For example, `computeArea()` in the `Triangle` subclass will calculate the triangle area, and so on.
 
+open class Shape
+
+
 ```sh
 Formulas to compute area:
 `Circle area = pi times the radius squared (A = π*r²)`
@@ -25,6 +28,10 @@ Formulas to compute area:
 ---
 ### Open Questions:
 - What is the difference between `enum classes` and `data classes`?
+  (Data Class) is used when the class is intended to represent a complex model that contains only properties (maybe belonging to different data types) and object of the class is required to hold only the properties’ values (data).
+ Classes that hold only data
+- enum is a special "class" that represents a group of constants (unchangeable/read-only variables). 
 - Which one of the `object` keyword ways can be used for the inheritance concept?
+- companion
 
 

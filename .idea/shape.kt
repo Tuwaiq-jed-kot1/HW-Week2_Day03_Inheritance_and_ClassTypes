@@ -73,7 +73,6 @@ fun main() {
 - that Kotlin gives us an immense amount of self-generated code.
 -
 - Which one of the `object` keyword ways can be used for the inheritance concept?
-Companion Object
 - //object ClassName :Single Inheritance..[]
 -open
 -override

@@ -1,50 +1,46 @@
 
 open class Shape(var shapeName: String, var shapeColor : String){
 
-    open fun info(){
-        val color =""
-        val  shape = ""
+     fun info() : String{
+         return "$shapeName, $shapeColor"
     }
 
-    open fun computeArea()  {
-
+    open fun computeArea() : Double {
+         return 0.0
     }
 
 }
-class Triangle: Shape(shapeName = "Triangle", shapeColor = "Blue" ) {
+class Triangle(var base:Double,var height:Double): Shape(shapeName = "Triangle", shapeColor = "Blue" ) {
 
 
-    override fun computeArea()   {
-        var base = 20.0
+    override fun computeArea() :Double  {
+    /*    var base = 20.0
         var height = 30.6
         val a = 1.0 / 2.0 * base * height
-        println(a)
+        println(a) */
+       return base*height /2
+
+
 
     }
 
 
 }
 
-class Circle: Shape (shapeColor = "red", shapeName = "Circle") {
+class Circle(var radius : Double , var pi :Double): Shape (shapeColor = "red", shapeName = "Circle") {
 
-    override fun computeArea() {
-        var r = 23.5
-        var ae = Math.PI * r * r
-        println(ae)
+    override fun computeArea() :Double {
+        return pi* radius *radius
     }
 }
-class Rectangle: Shape (shapeName = "Rectangle", shapeColor = "yellow") {
+class Rectangle(var width :Double, var height :Double): Shape (shapeName = "Rectangle", shapeColor = "yellow") {
 
-    override fun computeArea()  {
-        var width = 3.5
-        var height = 6.7
-        val rectangleArea = width * height
-        println(rectangleArea)
+    override fun computeArea() :Double {
+        return width * height
     }
 }
 
 fun main (){
-
     val ti = Triangle()
     ti.computeArea()
     val ci = Circle()
